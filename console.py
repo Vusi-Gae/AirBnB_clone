@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines the HBNB console."""
+"""It defines the HBNB console."""
 import cmd
 from shlex import split
 from models import storage
@@ -14,7 +14,7 @@ from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter."""
+    """It defines the ALX-HolbertonBnB command interpreter."""
 
     prompt = "(hbnb) "
     __classes = {
