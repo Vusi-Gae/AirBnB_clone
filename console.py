@@ -28,22 +28,20 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def emptyline(self):
-        """Ignore empty spaces."""
+        """Ignores empty spaces."""
         pass
 
     def do_quit(self, line):
-        """Quit command to exit the program."""
+        """Quits the program."""
         return True
 
     def do_EOF(self, line):
-        """EOF signal to exit the program."""
+        """Exits the program when receiving EOF signal."""
         print("")
         return True
 
     def do_create(self, line):
-        """Usage: create <class> <key 1>=<value 2> <key 2>=<value 2> ...
-        Create a new class instance with given keys/values and print its id.
-        """
+        """Creates a new class instance with given keys/values and prints its id."""
         try:
             if not line:
                 raise SyntaxError()
